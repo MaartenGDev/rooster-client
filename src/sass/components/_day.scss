@@ -1,0 +1,25 @@
+.day{
+  border-bottom: 1px solid $grey-blue;
+  margin-top: 20px;
+
+
+  &-details{
+    display: inline-block;
+    width: 20%;
+    float: left;
+    padding-left: 25px;
+
+    .date-details{
+      color: #87939E;
+    }
+    .date-display{
+      color: #9BABBA;
+      font-size: 14px;
+    }
+  }
+  &-lessons{
+    font-size: 14px;
+    display: inline-block;
+    width: calc(80% - 25px);
+  }
+}

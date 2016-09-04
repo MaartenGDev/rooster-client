@@ -1,0 +1,70 @@
+.lesson{
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &-times{
+
+    p:first-child{
+      padding-bottom: 3px;
+    }
+
+    width: 40px;
+    display: inline-block;
+  }
+  &-details{
+    width: calc(100% - 70px);
+    display: inline-block;
+    float: right;
+    padding-left: 30px;
+
+    .lesson-location{
+      display: inline-block;
+
+    }
+  }
+}
+.lesson-details{
+  .lesson-location .lesson-details-title{
+    span{
+      font-weight: 500;
+    }
+    color: #5e6c7a;
+    padding-bottom: 3px;
+  }
+  .lesson-location .lesson-details-classroom {
+    color: #9BABBC;
+  }
+}
+.lesson-details{
+  .lesson-details-room{
+
+    .lesson-color{
+      float: left;
+      background-color: #54B4EE;
+      width: 10px;
+      height: 10px;
+      margin-top: 6px;
+      border-radius: 50%;
+    }
+
+    border-left: 1px solid $grey-blue;
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .lesson-location{
+    padding-left: 10px;
+  }
+
+  .lesson-teacher{
+    color: #5e6c7a;
+    font-weight: 500;
+    padding-right: 20px;
+
+    float: right;
+    display: inline-block;
+  }
+}

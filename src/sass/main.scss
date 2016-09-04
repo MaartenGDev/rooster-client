@@ -13,7 +13,11 @@
 
 // Layouts
 @import 'layout/header';
-@import 'layout/page';
+
+// Calendar components
+@import 'components/calendar';
+@import 'components/day';
+@import 'components/lesson';
 
 // Components and modules
 @import 'components/icons';
@@ -23,5 +27,6 @@
 
 // Per page styles
 @import 'pages/calendar';
+
 // Theme
 @import 'themes/theme';

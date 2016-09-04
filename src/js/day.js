@@ -4,7 +4,7 @@ import Lesson from './lesson';
 class Day extends React.Component {
     render() {
         let lessons = this.props.lessons;
-
+        let firstLesson = this.props.lessons[0];
         lessons = lessons.map((lesson) => {
             let details = lesson.details;
                 return (
@@ -19,9 +19,16 @@ class Day extends React.Component {
                 )
             }
         );
-
+        console.log(firstLesson);
         return (
-            <div className="lesson"><h1>{ this.props.name }</h1>{lessons}</div>
+            <div className="day">
+                <div className="day-details">
+                    <span className="date-name">{ firstLesson.details.day.name }</span>
+                    <br />
+                    <span className="date-display">{ firstLesson.details.day.display_date }</span>
+                </div>
+                <div className="day-lessons"> {lessons}</div>
+            </div>
         );
     }
 }

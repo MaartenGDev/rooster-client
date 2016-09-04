@@ -1,0 +1,15 @@
+.calendar{
+  @include card;
+  background-color: $white;
+  padding: 5px;
+  &-bar{
+    padding: 20px;
+    border-bottom: 1px solid $grey-blue;
+  }
+  &-title{
+    margin: 0;
+    color: $grey-blue;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+  }
+}

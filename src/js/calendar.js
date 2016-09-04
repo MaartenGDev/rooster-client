@@ -3,7 +3,12 @@ import React from 'react';
 class Calendar extends React.Component {
     render(){
         return (
-            <div className="calendar"><h1>Calendar 2.0</h1>{this.props.events}</div>
+            <div className="calendar">
+                <div className="calendar-bar">
+                    <p className="calendar-title">CLASS TIMELINE</p>
+                </div>
+                {this.props.events}
+            </div>
         );
     }
 }
