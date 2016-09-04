@@ -1,0 +1,15 @@
+.chip {
+  background-color: $gray;
+  border-radius: 16px;
+  color: darken($gray, 50%);
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 5px;
+  padding: 0 12px;
+  &:hover{
+     background-color: darker($gray,10%);
+   }
+}

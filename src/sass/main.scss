@@ -1,0 +1,27 @@
+// Main settings
+@import 'base/settings';
+
+// Sass utilities
+@import 'helpers/mixins';
+@import 'helpers/margins';
+@import 'helpers/hidden';
+@import 'helpers/floats';
+
+// Base
+@import 'base/reset';
+@import 'base/colors';
+
+// Layouts
+@import 'layout/header';
+@import 'layout/page';
+
+// Components and modules
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/chips';
+@import 'components/card';
+
+// Per page styles
+@import 'pages/calendar';
+// Theme
+@import 'themes/theme';
