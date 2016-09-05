@@ -7,3 +7,80 @@ body {
   padding: 20px 40px;
   background-color: $white;
 }
+.lesson-color {
+  &-red {
+    background-color: $red;
+  }
+
+  &-pink {
+    background-color: $pink;
+  }
+
+  &-purple {
+    background-color: $purple;
+  }
+
+  &-deep-purple {
+    background-color: $deep-purple;
+  }
+
+  &-indigo {
+    background-color: $indigo;
+  }
+
+  &-blue {
+    background-color: $blue;
+  }
+
+  &-light-blue {
+    background-color: $light-blue;
+  }
+
+  &-cyan {
+    background-color: $cyan;
+  }
+
+  &-teal {
+    background-color: $teal;
+  }
+
+  &-green {
+    background-color: $green;
+  }
+
+  &-light-green {
+    background-color: $light-green;
+  }
+
+  &-lime {
+    background-color: $lime;
+  }
+
+  &-yellow {
+    background-color: $yellow;
+  }
+
+  &-amber {
+    background-color: $amber;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-deep-orange {
+    background-color: $deep-orange;
+  }
+
+  &-brown {
+    background-color: $brown;
+  }
+
+  &-grey {
+    background-color: $grey;
+  }
+
+  &-blue-gray {
+    background-color: $blue-gray;
+  }
+}

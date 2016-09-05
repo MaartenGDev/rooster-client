@@ -1,6 +1,20 @@
 import React from 'react';
 
 class Lesson extends React.Component {
+
+    getLessonColor(name){
+        return {
+            'Microsoft Technical Association': 'red',
+            'Android': 'pink',
+            'Webdesign PHP': 'purple',
+            'Nederlands 3F': 'teal',
+            'Loopbaan en Burgerschap': 'indigo',
+            'Engels': 'blue',
+            'Project': 'orange',
+            'Java': 'cyan'
+        }[name];
+    }
+
     render() {
         return (
             <div className="lesson">
@@ -11,7 +25,7 @@ class Lesson extends React.Component {
                 </div>
                 <div className="lesson-details">
                     <div className="lesson-details-room">
-                        <span className="lesson-color"></span>
+                        <span className={"lesson-color " + "lesson-color-" + this.getLessonColor(this.props.title)}></span>
                         <div className="lesson-location">
                             <p className="lesson-details-title"><span>{this.props.title}</span></p>
                             <p className="lesson-details-classroom">{this.props.room}</p>
