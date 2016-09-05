@@ -10,7 +10,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://rooster.dev')
+        fetch('https://api.maartendev.me')
             .then((res) => res.json())
             .then((data) => this.setState({lessons: data.data.lessons}));
     }
