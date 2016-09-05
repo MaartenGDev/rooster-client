@@ -1,13 +1,16 @@
 .lesson{
   font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  padding: 10px;
+
   p{
     margin-top: 0;
     margin-bottom: 0;
   }
+  &-active{
+    background-color: #F5F9FC;
+  }
   &-times{
-
+    padding: 10px 0;
     p:first-child{
       padding-bottom: 3px;
     }
@@ -16,7 +19,7 @@
     display: inline-block;
   }
   &-details{
-    width: calc(100% - 70px);
+    width: calc(100% - 90px);
     display: inline-block;
     float: right;
     padding-left: 30px;
@@ -39,8 +42,12 @@
     color: #9BABBC;
   }
 }
+
 .lesson-details{
+  border-left: 1px solid $grey-blue;
   .lesson-details-room{
+    padding: 15px 0;
+    display: inline-block;
 
     .lesson-color{
       float: left;
@@ -50,10 +57,8 @@
       border-radius: 50%;
     }
 
-    border-left: 1px solid $grey-blue;
-    padding-left: 15px;
-    display: inline-block;
   }
+
   .lesson-location{
     padding-left: 10px;
   }
@@ -62,7 +67,7 @@
     color: #5e6c7a;
     font-weight: 500;
     padding-right: 20px;
-
+    margin-top: 15px;
     float: right;
     display: inline-block;
   }

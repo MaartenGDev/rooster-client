@@ -16,14 +16,15 @@ class Lesson extends React.Component {
     }
 
     render() {
+        console.log(this.props.active);
         return (
-            <div className="lesson">
+            <div className="lesson ">
                 <div className="lesson-times">
                     <p><b>{this.props.start}</b></p>
                     <p><b>{this.props.end}</b></p>
 
                 </div>
-                <div className="lesson-details">
+                <div className={"lesson-details " + (this.props.active ? "lesson-active" : "")}>
                     <div className="lesson-details-room">
                         <span className={"lesson-color " + "lesson-color-" + this.getLessonColor(this.props.title)}></span>
                         <div className="lesson-location">

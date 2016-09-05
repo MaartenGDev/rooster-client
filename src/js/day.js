@@ -15,11 +15,11 @@ class Day extends React.Component {
                         end={details.time.end}
                         room={details.room}
                         teacher={details.teacher}
+                        active={details.active}
                     />
                 )
             }
         );
-        console.log(firstLesson);
         return (
             <div className="day">
                 <div className="day-details">
