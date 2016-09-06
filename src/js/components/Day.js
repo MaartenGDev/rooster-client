@@ -1,12 +1,14 @@
 import React from 'react';
-import Lesson from './lesson';
+import Lesson from './Lesson';
 
 class Day extends React.Component {
     render() {
-        let lessons = this.props.lessons;
-        let firstLesson = this.props.lessons[0];
+        let { lessons } = this.props;
+
+        const firstLesson = lessons[0];
+
         lessons = lessons.map((lesson) => {
-            let details = lesson.details;
+            const { details } = lesson;
                 return (
                     <Lesson
                         key={details.day.id + details.time.start + details.time.end}
@@ -27,7 +29,7 @@ class Day extends React.Component {
                     <br />
                     <span className="date-display">{ firstLesson.details.day.display_date }</span>
                 </div>
-                <div className="day-lessons"> {lessons}</div>
+                <div className="day-lessons"> { lessons }</div>
             </div>
         );
     }
