@@ -1,7 +1,7 @@
 import React from 'react';
 import Lesson from './lesson';
 
-class Day extends React.Component {
+export default class Day extends React.Component {
     render() {
         let lessons = this.props.lessons;
         let firstLesson = this.props.lessons[0];
@@ -32,5 +32,3 @@ class Day extends React.Component {
         );
     }
 }
-
-export default Day;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Lesson extends React.Component {
+export default class Lesson extends React.Component {
 
     getLessonColor(name){
         return {
@@ -38,5 +38,3 @@ class Lesson extends React.Component {
         );
     }
 }
-
-export default Lesson;
