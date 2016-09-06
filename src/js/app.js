@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calendar from './calendar';
-import Day from './day';
+import Calendar from './components/Calendar';
+import Day from './components/Day';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {lessons: []};
+
+        this.state = {
+            lessons: []
+        };
     }
 
     componentDidMount() {
@@ -16,21 +19,23 @@ class App extends React.Component {
     }
 
     groupByDay(lessons) {
-        let events = [];
-        lessons.forEach((lesson) => {
-                var day = lesson.details.day.id;
+        return lessons.reduce((events, lesson) => {
+            const day = lesson.details.day.id;
 
-                if (!(day in events)) events[day] = [];
-                events[day].push(lesson);
+            if (!(day in events)) {
+                events[day] = [];
             }
-        );
-        return events;
+
+            events[day].push(lesson);
+
+            return events;
+        }, []);
     }
 
     render() {
-        let events = this.groupByDay(this.state.lessons);
+        const { lessons } = this.state;
 
-        events = events.map(function(lessons){
+        const events = this.groupByDay(lessons).map((lessons) => {
             return (
                 <Day key={lessons[0].details.day.id} lessons={lessons}/>
             )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Lesson extends React.Component {
+class Lesson extends React.Component {
 
     getLessonColor(name){
         return {
@@ -16,25 +16,28 @@ export default class Lesson extends React.Component {
     }
 
     render() {
-        console.log(this.props.active);
+        const { start, end, title, active, room, teacher } = this.props
+
         return (
             <div className="lesson ">
                 <div className="lesson-times">
-                    <p><b>{this.props.start}</b></p>
-                    <p><b>{this.props.end}</b></p>
+                    <p><b>{ start }</b></p>
+                    <p><b>{ end }</b></p>
 
                 </div>
-                <div className={"lesson-details " + (this.props.active ? "lesson-active" : "")}>
+                <div className={"lesson-details " + (active ? "lesson-active" : "")}>
                     <div className="lesson-details-room">
-                        <span className={"lesson-color " + "lesson-color-" + this.getLessonColor(this.props.title)}></span>
+                        <span className={"lesson-color " + "lesson-color-" + this.getLessonColor(title)}></span>
                         <div className="lesson-location">
-                            <p className="lesson-details-title"><span>{this.props.title}</span></p>
-                            <p className="lesson-details-classroom">{this.props.room}</p>
+                            <p className="lesson-details-title"><span>{ title }</span></p>
+                            <p className="lesson-details-classroom">{ room }</p>
                         </div>
                     </div>
-                    <span className="lesson-teacher">{ this.props.teacher }</span>
+                    <span className="lesson-teacher">{ teacher }</span>
                 </div>
             </div>
         );
     }
 }
+
+export default Lesson;

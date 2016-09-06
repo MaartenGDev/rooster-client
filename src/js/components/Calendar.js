@@ -1,14 +1,18 @@
 import React from 'react';
 
-export default class Calendar extends React.Component {
+class Calendar extends React.Component {
     render(){
+        const { events } = this.props;
+
         return (
             <div className="calendar">
                 <div className="calendar-bar">
                     <p className="calendar-title">CLASS TIMELINE</p>
                 </div>
-                {this.props.events}
+                { events }
             </div>
         );
     }
 }
+
+export default Calendar;
