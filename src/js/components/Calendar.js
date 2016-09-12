@@ -7,7 +7,7 @@ class Calendar extends React.Component {
         return (
             <div className="calendar">
                 <div className="calendar-bar">
-                    <p className="calendar-title">CLASS TIMELINE</p>
+                    <p className="calendar-title">ROOSTER</p>
                 </div>
                 { events }
             </div>

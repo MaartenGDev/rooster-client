@@ -36,6 +36,12 @@ class App extends React.Component {
 
             lesson.details.color = this.getLessonColor(lesson.name);
 
+            if(lesson.details.room === ''){
+                lesson.details.room = '-';
+            }
+            if(lesson.details.teacher === ''){
+                lesson.details.teacher = '-';
+            }
             if (!(day in events)) {
                 events[day] = [];
             }
