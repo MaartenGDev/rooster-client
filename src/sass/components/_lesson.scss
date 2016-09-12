@@ -1,38 +1,39 @@
-.lesson{
+.lesson {
   font-size: 14px;
   padding: 10px;
 
-  p{
+  p {
     margin-top: 0;
     margin-bottom: 0;
   }
-  &-active{
+  &-active {
     background-color: #F5F9FC;
   }
-  &-times{
+  &-times {
     padding: 10px 0;
-    p:first-child{
+    p:first-child {
       padding-bottom: 3px;
     }
 
     width: 40px;
     display: inline-block;
   }
-  &-details{
+  &-details {
     width: calc(100% - 90px);
     display: inline-block;
     float: right;
     padding-left: 30px;
 
-    .lesson-location{
+    .lesson-location {
       display: inline-block;
 
     }
   }
-} 
-.lesson-details{
-  .lesson-location .lesson-details-title{
-    span{
+}
+
+.lesson-details {
+  .lesson-location .lesson-details-title {
+    span {
       font-weight: 500;
     }
     color: #5e6c7a;
@@ -43,13 +44,13 @@
   }
 }
 
-.lesson-details{
+.lesson-details {
   border-left: 1px solid $grey-blue;
-  .lesson-details-room{
+  .lesson-details-room {
     padding: 15px 0;
     display: inline-block;
 
-    .lesson-color{
+    .lesson-color {
       float: left;
       width: 10px;
       height: 10px;
@@ -59,11 +60,11 @@
 
   }
 
-  .lesson-location{
+  .lesson-location {
     padding-left: 10px;
   }
 
-  .lesson-teacher{
+  .lesson-teacher {
     color: #5e6c7a;
     font-weight: 500;
     padding-right: 20px;
@@ -73,8 +74,12 @@
   }
 }
 
-@media (max-width: $mobile-width){
-  .lesson-details .lesson-teacher{
+@media (max-width: $mobile-width) {
+  .lesson-details {
+    width: calc(100% - 65px);
+    padding-left: 15px;
+  }
+  .lesson-details .lesson-teacher {
     padding-right: 0;
   }
 }
