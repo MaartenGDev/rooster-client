@@ -5,9 +5,10 @@
   margin-top: 20px;
 
   &-details{
-    width: 100%;
+    display: inline-block;
+    width: 20%;
     float: left;
-    padding-left: 10px;
+    padding-left: 15px;
 
     .date-details{
       color: #87939E;
@@ -29,6 +30,12 @@
 
 
 @media (max-width: $mobile-width){
+  .day-details{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+
+  }
   .day-lessons{
     width: calc(100% - 20px)
   }
