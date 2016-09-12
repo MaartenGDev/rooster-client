@@ -2,6 +2,7 @@ import React from 'react';
 import Lesson from './Lesson';
 
 class Day extends React.Component {
+
     render() {
         let { lessons } = this.props;
 
@@ -9,6 +10,7 @@ class Day extends React.Component {
 
         lessons = lessons.map((lesson) => {
             const { details } = lesson;
+
                 return (
                     <Lesson
                         key={details.day.id + details.time.start + details.time.end}
@@ -18,6 +20,7 @@ class Day extends React.Component {
                         room={details.room}
                         teacher={details.teacher}
                         active={details.active}
+                        color={details.color}
                     />
                 )
             }
